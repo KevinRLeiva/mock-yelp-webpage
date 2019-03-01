@@ -1,0 +1,485 @@
+/* general style */
+*{
+  box-sizing: border-box;
+}
+.clearFix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* body style */
+#backGround{
+  height: 629px;
+  width: 100%;
+  float: left;
+  background-image: url(../img/comida.jpg);
+  background-size: cover;
+  background-repeat: none;
+}
+#backGround > header{
+  height: 100px;
+  width: 100%;
+  float: left;
+}
+header > section{
+  height: 92px;
+  width: 20%;
+  float: right;
+  margin: -15px 10%;
+}
+#backGround + section{
+  height: 100px;
+  width: 100%;
+  float: left;
+}
+#backGround + section + section{
+  height: 600px;
+  width: 100%;
+  float: left;
+}
+.reviewBox{
+  height: 440px;
+  width: 23%;
+  float: left;
+  border: 2px solid gray;
+  margin: -5px 5%;
+}
+footer{
+  height: 300px;
+  width: 100%;
+  clear: both;
+  background: rgb(237,240,244);
+}
+.menuBox{
+  height: 200px;
+  width: 20%;
+  float: left;
+  border: 2px solid gray;
+  margin-left: 4%;
+}
+/* main style */
+section  header  nav a{
+  text-decoration: none;
+  color: white;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+section  header  nav li{
+  list-style: none;
+  margin: 12px 3%;
+  float: left;
+  font-size: 141%;
+}
+section  header  section > a{
+  margin: 28px 9% 0;
+  color: white;
+  float: left;
+  font-size: 130%;
+}
+#signIn{
+  border: 2px solid white;
+  padding: 3%;
+  margin: 18px;
+}
+/* Search Bar style */
+h1 img{
+  height: 305px;
+  margin: 0 39%;
+}
+h1 + form{
+  margin: -59px 18%;
+}
+.searchBar{
+  width: 47%;
+  padding: 7px;
+}
+.searchBar + button{
+  background: red;
+  color: white;
+  padding: 9px;
+  width: 5%;
+}
+form + nav {
+  float: left;
+  color: white;
+  margin: 55px 21%;
+  width: 55%;
+}
+form + nav  ul > li{
+  float: left;
+  margin-left: 10%;
+}
+form + nav + h4{
+  float: left;
+  color: white;
+  margin: 60px 43%;
+  font-size: 125%;
+}
+form + nav + h4 + span{
+  float: left;
+  color: white;
+  margin: -47px 45%;
+}
+/* bottom style */
+section > h3{
+  float: left;
+  color: red;
+  margin: 16px 39%;
+  font-size: 148%;
+  width: 20%;
+  text-align: center;
+}
+section  h3 + nav  ul  li > a{
+  color: black;
+}
+section  h3 + nav  ul > li{
+  float: left;
+  margin: 0 4%;
+}
+.reviewBox > img{
+  height: 240px;
+}
+.reviewBox > img + h4{
+  margin: 5px 3%;
+}
+.bluetext{
+  color: rgb(59,90,131);
+  font-size: 139%;
+}
+.reviewBox + img + h4 + ul{
+  margin: 0 1%;
+}
+/* I didn't write this code */
+.reviewBox i {
+  background: orange;
+  height: 12px;
+  border-radius: 2px;
+  color: white;
+  float: left;
+}
+.reviewBox .fa-fire{
+  color: red;
+  background: none;
+}
+/* This is my code */
+.noTime{
+  float: left;
+  margin: 1px 1%;
+}
+.reviewBox > span{
+  float: left;
+  margin: 10px 7%;
+  width: 49%;
+}
+.reviewBox + .reviewBox + .reviewBox + span{
+  float: left;
+  margin: 22px 41%;
+  color: rgb(64,90,124);
+  font-size: 117%;
+}
+footer > h2 a{
+  color: red;
+  margin-left: 608px;
+}
+.morePics{
+  float: left;
+  margin: 1px 27%;
+}
+.morePics + span{
+  float: left;
+  margin: 1px 38%;
+}
+/*display for mobile */
+@media only screen and (max-width: 480px){
+  header > section{
+    height: 92px;
+    width: 50%;
+    float: right;
+    margin: -16px -1%;
+  }
+  footer{
+    width: 100%;
+    clear: both;
+    height: 899px;
+  }
+  #backGround + section + section{
+    width: 100%;
+    float: left;
+    height: 1428px;
+  }
+  .reviewBox{
+    width: 99%;
+    float: left;
+    border: 2px solid gray;
+    margin: -5px 1%;
+  }
+  .menuBox{
+    width: 100%;
+    float: left;
+    margin-left: 0%;
+  }
+  section  header  nav li{
+    list-style: none;
+    margin: 12px 1%;
+    float: left;
+    font-size: 141%;
+  }
+  #signIn{
+    border: 2px solid white;
+    padding: 3%;
+    margin: -29px;
+    margin-top: 18px;
+    margin-left: 1px;
+  }
+  /* Search Bar style */
+  h1 img{
+    height: 305px;
+    margin: 0 17%;
+  }
+  h1 + form{
+    margin: -59px 0%;
+  }
+  .searchBar{
+    width: 40%;
+    padding: 7px;
+  }
+  .searchBar + button{
+    background: red;
+    color: white;
+    padding: 9px;
+    width: 17%;
+  }
+  form + nav {
+    float: left;
+    color: white;
+    margin: 54px 31%;
+    width: 20%;
+  }
+  form + nav  ul > li{
+    float: left;
+    margin-left: -78%;
+  }
+  form + nav + h4{
+    float: left;
+    color: white;
+    margin: -16px 30%;
+    font-size: 97%;
+    width: 69%;
+  }
+  form + nav + h4 + span{
+    float: left;
+    color: white;
+    margin: 6px 31%;
+  }
+  /* bottom style */
+  section > h3{
+    float: left;
+    color: red;
+    margin: -2px 39%;
+    font-size: 123%;
+    width: 20%;
+    text-align: center;
+    padding-bottom: 6px;
+  }
+  section  h3 + nav  ul > li{
+    float: left;
+    margin: 2px 3%;
+  }
+  .reviewBox > img{
+    height: 240px;
+    margin-left: 26px;
+    margin-top: 8px;
+  }
+  .reviewBox > img + h4{
+    margin: 5px 3%;
+  }
+  .bluetext{
+    color: rgb(59,90,131);
+    font-size: 139%;
+  }
+  .reviewBox + img + h4 + ul{
+    margin: 0 1%;
+  }
+  /* I didn't write this code */
+  .reviewBox i {
+    background: orange;
+    height: 12px;
+    border-radius: 2px;
+    color: white;
+    float: left;
+  }
+  .reviewBox .fa-fire{
+    color: red;
+    background: none;
+  }
+  /* This is my code */
+  .noTime{
+    float: left;
+    margin: 1px 1%;
+  }
+  .reviewBox > span{
+    float: left;
+    margin: 10px 7%;
+    width: 49%;
+  }
+  .reviewBox + .reviewBox + .reviewBox + span{
+    float: left;
+    margin: 22px 21%;
+    color: rgb(64,90,124);
+    font-size: 117%;
+  }
+  footer > h2 a{
+    color: red;
+    margin-left: 55px;
+  }
+  .morePics{
+    float: left;
+    margin: 1px 32%;
+  }
+  .morePics + span{
+    float: left;
+    margin: 1px 40%;
+  }
+}
+/*display for tablet */
+@media (min-width: 481px) and (max-width: 768px){
+  .reviewBox {
+    height: 440px;
+    width: 31%;
+    float: left;
+    margin: -5px 1%;
+  }
+  #signIn{
+    border: 2px solid white;
+    padding: 3%;
+    margin: -29px;
+    margin-top: 25px;
+    margin-left: 1px;
+  }
+  footer {
+    height: 501px;
+    width: 100%;
+    clear: both;
+  }
+  .menuBox {
+    height: 200px;
+    width: 44%;
+    float: left;
+    margin-left: 4%;
+  }
+  h1 img{
+    height: 305px;
+    margin: 0 25%;
+  }
+  h1 + form{
+    margin: -59px 8%;
+  }
+  .searchBar{
+    width: 46%;
+    padding: 7px;
+  }
+  .searchBar + button{
+    background: red;
+    color: white;
+    padding: 9px;
+    width: 5%;
+  }
+  form + nav {
+    float: left;
+    color: white;
+    margin: 55px 21%;
+    width: 55%;
+  }
+  form + nav  ul > li{
+    float: left;
+    margin-left: 10%;
+  }
+  form + nav + h4{
+    float: left;
+    color: white;
+    margin: 20px 37%;
+    font-size: 125%;
+  }
+  form + nav + h4 + span{
+    float: left;
+    color: white;
+    margin: -19px 40%;
+  }
+  /* bottom style */
+  section > h3{
+    float: left;
+    color: red;
+    margin: 16px 39%;
+    font-size: 148%;
+    width: 20%;
+    text-align: center;
+  }
+  section  h3 + nav  ul > li{
+    margin: 0 2%;
+  }
+  .reviewBox > img{
+    height: 152px;
+  }
+  .reviewBox > img + h4{
+    margin: 5px 3%;
+  }
+  .bluetext{
+    color: rgb(59,90,131);
+    font-size: 139%;
+  }
+  .reviewBox + img + h4 + ul{
+    margin: 0 1%;
+  }
+  /* I didn't write this code */
+  .reviewBox i {
+    background: orange;
+    height: 19px;
+    border-radius: 2px;
+    color: white;
+    float: left;
+  }
+  .reviewBox .fa-fire{
+    color: red;
+    background: none;
+  }
+  /* This is my code */
+  .noTime{
+    float: left;
+    margin: 1px 1%;
+  }
+  .reviewBox > span{
+    float: left;
+    margin: 10px 4%;
+    width: 49%;
+  }
+  .reviewBox + .reviewBox + .reviewBox + span{
+    float: left;
+    margin: 22px 41%;
+    color: rgb(64,90,124);
+    font-size: 117%;
+  }
+  footer > h2 a{
+    color: red;
+    margin-left: 195px;
+  }
+  .morePics{
+    float: left;
+    margin: 1px 27%;
+  }
+  .morePics + span{
+    float: left;
+    margin: 1px 38%;
+  }
+}
+/* display for webpage */
+@media (min-width: 769px) and (max-width: 1680px) {
+
+}
